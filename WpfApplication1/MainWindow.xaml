@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="794.129" Width="1265.99" Closed="Window_Closed">
+    <Canvas HorizontalAlignment="Left" Height="774" VerticalAlignment="Top" Width="1256" Margin="0,10,0,-21" Background="#FF1B6C03">
+        <Frame x:Name="frame" Content="Frame" Height="59" Width="1258" Background="#FF027474" Canvas.Top="-11"/>
+        <Button x:Name="button" Content="Button" Canvas.Left="10" Canvas.Top="71" Width="75" Click="button_Click" Background="{x:Null}" Foreground="#FF0D2DF7" BorderBrush="#FF028F02"/>
+        <Button x:Name="button1" Content="Button" Canvas.Left="10" Canvas.Top="114" Width="75" Click="button1_Click" Background="{x:Null}" Foreground="#FF0829FD" BorderBrush="#FF029502"/>
+        <Image x:Name="image" Height="500" Canvas.Left="121" Canvas.Top="71" Width="700"/>
+    </Canvas>
 </Window>
