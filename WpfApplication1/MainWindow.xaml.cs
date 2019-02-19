@@ -83,13 +83,13 @@ namespace WpfApplication1
                             for (c = 0; c < imgSrc.Channels(); c++)
                             {
                                 pBuffer[a * imgSrc.Width * imgSrc.Channels() + b * imgSrc.Channels() + c] = (Byte)((a * b + c) % 255); //흑백물결무늬
-                                pBuffer[a * imgSrc.Width * imgSrc.Channels() + b * imgSrc.Channels() + c] = (Byte)((a + b + c) % 255); //흑백사선무늬
-                                pBuffer[a * imgSrc.Width * imgSrc.Channels() + b * imgSrc.Channels() + c] = (Byte)((a + b * c) % 255); //칼라줄무늬
+                                //pBuffer[a * imgSrc.Width * imgSrc.Channels() + b * imgSrc.Channels() + c] = (Byte)((a + b + c) % 255); //흑백사선무늬
+                                //pBuffer[a * imgSrc.Width * imgSrc.Channels() + b * imgSrc.Channels() + c] = (Byte)((a + b * c) % 255); //칼라줄무늬
                             }
                             //칼러격자무늬
-                            pBuffer[a * imgSrc.Width * imgSrc.Channels() + b * imgSrc.Channels() + 0] = (Byte)((a) % 255);
-                            pBuffer[a * imgSrc.Width * imgSrc.Channels() + b * imgSrc.Channels() + 1] = (Byte)((b) % 255);
-                            pBuffer[a * imgSrc.Width * imgSrc.Channels() + b * imgSrc.Channels() + 2] = (Byte)((a + b) % 255);
+                            //pBuffer[a * imgSrc.Width * imgSrc.Channels() + b * imgSrc.Channels() + 0] = (Byte)((a) % 255);
+                            //pBuffer[a * imgSrc.Width * imgSrc.Channels() + b * imgSrc.Channels() + 1] = (Byte)((b) % 255);
+                            //pBuffer[a * imgSrc.Width * imgSrc.Channels() + b * imgSrc.Channels() + 2] = (Byte)((a + b) % 255);
                         }
                     }
                 }
